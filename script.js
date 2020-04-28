@@ -35,15 +35,11 @@ if (passwordLength < 8 && passwordLength > 128) {
   generatePassword();
 }
 
-}
-
 for (var i = 7; i < 129; i++) {
-    // Generate a random number between 1 and 10
-    // Math.floor will round down, meaning we would get a number between 0 and 9, so we'll always add 1 to bump it up.
-    var num = Math.floor(Math.random(lowerCase[i] + upperCase[i], numericVal[i], specChar[i]);
 
-if (lowerCase && upperCase && numericVal && specChar) {
-    alert(lowerCase[i] + upperCase[i], numericVal[i], specChar[i]);
+    var num = Math.floor(Math.random() * Math.floor(128));
+    console.log(lowerCase[num]);
+}
 }
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
